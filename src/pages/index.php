@@ -14,7 +14,6 @@
             <section class="main-text">
                 <a href="index.php" class="main-link">
                     <h2 class="main-image-text">Luciano Della Savia</h2>
-                    
                 </a>
             </section>
             <nav class="nav">
