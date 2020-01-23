@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Personal Blog
+        link(rel="stylesheet", href="./css/index.css")
+    body
+
+        .container
+            header.header
+                section.main-text
+                    a.main-link(href="index.php")
+                        h2.main-image-text Luciano Della Savia
+                nav.nav
+                    ul.nav-list
+                        li.nav-list-item
+                            a.nav-list-item-link(href="#") lorem
+                        li.nav-list-item
+                            a.nav-list-item-link(href="#") lorem
+                        li.nav-list-item
+                            a.nav-list-item-link(href="#") lorem
+                        li.nav-list-item
+                            a.nav-list-item-link(href="#") lorem
+            main.main
+            aside.aside
+                .register.block__aside
+                    h5.form_title Register
+                    form.form(action="./php/register.php", method="post")
+                        input.field(type="text", name="username", placeholder="Username")
+                        input.field(type="email", name="email", placeholder="Email")
+                        input.field(type="password", name="password", placeholder="Password")
+                        input.btn.btn_submit(type="submit", value="Let's go!")
+                hr
+                .login.block__aside
+                    h5.form_title Login
+                    form.form(action="./php/login.php", method="post")
+                        input.field(type="email", name="email", placeholder="Email")
+                        input.field(type="password", name="password", placeholder="Password")
+                        input.btn.btn_submit(type="submit", value="Let's go!")
+            footer.footer 
+                p Created by Luciano Agustín Della Savia
+                script document.write('<p>&copy ' + new Date().getFullYear() + '</p>')
+        script(src="./js/main.js")

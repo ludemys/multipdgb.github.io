@@ -1,0 +1,113 @@
+.header{
+    grid-area: header;
+    
+    display: flex;
+    justify-content: space-between;
+
+    max-height: 4.4em;
+
+    border-bottom: 1px solid #eee;
+
+    .main-text{
+        // width: 21rem;
+        line-height: 4.4rem;
+        padding-left: .8rem;
+        padding-right: .8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // background-color: #aaa;
+
+        font-size: 1.3em;
+
+        text-align: center;
+
+        text-shadow: 1px 1px 2px #bbb;
+
+        transition: all .2s;
+        font-family: "Montserrat";
+        &:hover{
+            text-shadow: -1px -1px 2px #bbb;
+
+            transform: translateX(10px) scale(1.13, 1.1);
+        }
+    }
+    .nav{
+        min-width: 21.8rem;
+        flex-grow: 1;
+
+        // background-color: #555;
+
+        .nav-list{
+            position: sticky;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            // display: flex;
+            // justify-content: space-evenly;
+            // align-items: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(2em, 1fr));
+            grid-gap: 1em;
+
+            align-content: center;
+            justify-items: center;
+
+            .nav-list-item{
+                font-size: 1.2em;
+                display: flex;
+                box-shadow: 0 0 1px #eee;
+                overflow: hidden;
+
+                border-radius: 1.2em;
+                position: relative;
+
+                transition: all .3s ease-out;
+
+
+                &:before, &:after{
+                    content: "";
+                    position: absolute;
+                    display: block;
+
+                    background-color: rgba($color: #eee, $alpha: .5);
+                    height: 0;
+
+                    width: 120px;
+
+                    transition: all .3s ease-out;
+
+                    z-index: 10;
+                }
+                &:before{
+                    top: 0;
+                }
+                &:after{
+                    bottom: 0;
+                }
+                &:hover:before, &:hover::after{
+                    height: 1px;
+                }
+
+                &:hover{
+                    box-shadow: 0 0 1px #eee
+                                inset 0 -1px 2px #eee
+                                inset 0 1px 2px #eee;
+
+                    transform: scale(.85, .95);
+
+                    background-color: rgba($color: #777, $alpha: .1);
+                }
+
+                .nav-list-item-link{
+                    flex-grow: 1;
+
+                    padding-left: 1.5em;
+                    padding-right: 1.5em;
+                    line-height: 2.4em;
+                }
+            }
+        }
+    }
+}

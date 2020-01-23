@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Roboto|Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+
+    font-family: "Montserrat", "Open Sans", "Merriweather";
+}
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_1280.jpg");
+
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 95%;
+    min-height: 100vh;
+    box-shadow: 0 0 5px 1px #eee;
+
+    display: grid;
+    grid-template-areas: "header header"
+                         "main aside"
+                         "footer footer";
+    grid-template-rows: 4.4rem 1fr 3rem;
+    grid-template-columns: 4fr 1fr;
+
+    margin-left: auto;
+    margin-right: auto;
+    // padding: .7em .7em 0 .7em;
+}
+
+
+@import 'components/header.scss';
+@import 'components/aside.scss';
+@import 'components/main.scss';
+@import 'components/form.scss';
+@import 'components/button.scss';
+@import 'components/footer.scss';
+@import 'components/media_queries.scss';

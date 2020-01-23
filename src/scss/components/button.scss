@@ -1,0 +1,41 @@
+.btn{
+    background: transparent;
+    border: none;
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+
+    box-shadow: 0 0 2px #eee;
+
+    letter-spacing: .05rem;
+
+    cursor: pointer;
+
+    transition: all .25s;
+
+    &:hover{
+        transform: scale(.95);
+    }
+    &:active{
+        transform: scale(.85);
+    }
+}
+.btn_submit{
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+
+    line-height: 1.35rem;
+
+    border-radius: 8px;
+
+    background-color: rgba($color: #eee, $alpha: .1);
+
+    &:hover{
+        background-color: #eee;
+
+        color: #444;
+    }
+}

@@ -1,0 +1,15 @@
+.aside{
+    grid-area: aside;
+
+    // box-shadow: 0 0 5px #eee;
+    border-left: 1px solid #eee;
+
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    hr{
+        
+    }
+}
