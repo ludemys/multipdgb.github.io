@@ -10,43 +10,17 @@
   <body>
     <div class="container">
       <header class="header">
-        <section class="main-text"><a class="main-link" href="index.php">
+        <section class="main-text nav_flex_grow"><a class="main-link" href="main.html">
             <h2 class="main-image-text">Luciano Della Savia</h2></a></section>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-list-item"><a class="nav-list-item-link" href="#">lorem</a></li>
-            <li class="nav-list-item"><a class="nav-list-item-link" href="#">lorem</a></li>
-            <li class="nav-list-item"><a class="nav-list-item-link" href="#">lorem</a></li>
-            <li class="nav-list-item"><a class="nav-list-item-link" href="#">lorem</a></li>
-          </ul>
-        </nav>
       </header>
-      <main class="main"></main>
-      <aside class="aside">
-        <div class="register block__aside">
-          <h5 class="form_title">Register</h5>
-          <form class="form" action="./php/register.php" method="post">
-            <input class="field" type="text" name="username" placeholder="Username">
-            <input class="field" type="email" name="email" placeholder="Email">
-            <input class="field" type="password" name="password" placeholder="Password">
-            <input class="btn btn_submit" type="submit" value="Let's go!">
-          </form>
-        </div>
-        <hr>
-        <div class="login block__aside">
-          <h5 class="form_title">Login</h5>
-          <form class="form" action="./php/login.php" method="post">
-            <input class="field" type="email" name="email" placeholder="Email">
-            <input class="field" type="password" name="password" placeholder="Password">
-            <input class="btn btn_submit" type="submit" value="Let's go!">
-          </form>
-        </div>
-      </aside>
+      <main class="page-index">
+        <section class="button-container"><a class="btn page-index-button btn_submit" href="#">Gallery</a><a class="btn page-index-button btn_submit" href="main.html">Entries</a><a class="btn page-index-button btn_submit" href="#">Login</a><a class="btn page-index-button btn_submit" href="#">Register</a></section>
+      </main>
       <footer class="footer"> 
         <p>Created by Luciano Agustín Della Savia</p>
         <script>document.write('<p>&copy ' + new Date().getFullYear() + '</p>')</script>
       </footer>
+      <script src="./js/main.js"></script>
     </div>
-    <script src="./js/main.js"></script>
   </body>
 </html>

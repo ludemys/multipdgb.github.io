@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <section class="main-text"><a class="main-link" href="index.php">
+            <h2 class="main-image-text">Luciano Della Savia</h2></a></section>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list-item"><a class="nav-list-item-link" href="#">lorem</a></li>
+            <li class="nav-list-item"><a class="nav-list-item-link" href="#">lorem</a></li>
+            <li class="nav-list-item"><a class="nav-list-item-link" href="#">lorem</a></li>
+            <li class="nav-list-item"><a class="nav-list-item-link" href="#">lorem</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main"></main>
+      <aside class="aside">
+        <div class="register block__aside">
+          <h5 class="form_title">Register</h5>
+          <form class="form" action="./php/register.php" method="post">
+            <input class="field" type="text" name="username" placeholder="Username">
+            <input class="field" type="email" name="email" placeholder="Email">
+            <input class="field" type="password" name="password" placeholder="Password">
+            <input class="btn btn_submit" type="submit" value="Let's go!">
+          </form>
+        </div>
+        <hr>
+        <div class="login block__aside">
+          <h5 class="form_title">Login</h5>
+          <form class="form" action="./php/login.php" method="post">
+            <input class="field" type="email" name="email" placeholder="Email">
+            <input class="field" type="password" name="password" placeholder="Password">
+            <input class="btn btn_submit" type="submit" value="Let's go!">
+          </form>
+        </div>
+      </aside>
+      <footer class="footer"> 
+        <p>Created by Luciano Agustín Della Savia</p>
+        <script>document.write('<p>&copy ' + new Date().getFullYear() + '</p>')</script>
+      </footer>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
